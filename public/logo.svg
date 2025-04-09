@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" viewBox="0 0 300 60">
+  <g fill="none" fill-rule="evenodd">
+    <!-- Logo Symbol - Square with N inside -->
+    <rect x="0" y="5" width="50" height="50" stroke="#00e5ff" stroke-width="3" />
+    <path d="M15 15 L35 45 M15 15 L15 45 M35 15 L35 45" stroke="#00e5ff" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Text part -->
+    <text font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#00e5ff" x="60" y="30">
+      NETWORKED
+    </text>
+    <text font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#00e5ff" x="60" y="50">
+      NARRATIVES
+    </text>
+  </g>
+</svg> 

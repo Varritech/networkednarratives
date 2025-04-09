@@ -1,0 +1,350 @@
+.section {
+  position: relative;
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.backgroundGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 229, 255, 0.1), rgba(0, 229, 255, 0.05), transparent);
+  pointer-events: none;
+}
+
+.topGlow {
+  position: absolute;
+  top: 10rem;
+  left: -5rem;
+  width: 18rem;
+  height: 18rem;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.2) 0%, transparent 70%);
+  filter: blur(6.25rem);
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.bottomGlow {
+  position: absolute;
+  bottom: 10rem;
+  right: 5rem;
+  width: 24rem;
+  height: 24rem;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.1) 0%, transparent 70%);
+  filter: blur(7.5rem);
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .contentGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInLeft 1.2s ease-out;
+}
+
+.logoBox {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.logoGlow {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 229, 255, 0.2);
+  border-radius: 0.5rem;
+  filter: blur(0.5rem);
+  transform: rotate(-6deg);
+}
+
+.logoInner {
+  background-color: black;
+  border: 2px solid #00e5ff;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+  border-radius: 0.5rem;
+}
+
+.logoLetter {
+  color: #00e5ff;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.brandTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandText {
+  color: #00e5ff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.headlineContainer {
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.headline {
+  color: #fff;
+  font-size: 1.875rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .headline {
+    font-size: 2.25rem;
+  }
+}
+
+.subheading {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  max-width: 36rem;
+  animation: fadeInUp 1.2s ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .subheading {
+    font-size: 1.5rem;
+  }
+}
+
+.ctaButton {
+  animation: fadeInUp 1.2s ease-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}
+
+.ctaButton:hover {
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+}
+
+.imageContainer {
+  position: relative;
+  animation: fadeIn 1.2s ease-out;
+  transform: translateY(0);
+  transition: transform 0.7s;
+}
+
+.imageContainer:hover {
+  transform: translateY(-5px);
+}
+
+.imageBorder {
+  position: absolute;
+  inset: 0;
+  border-right: 4px solid #00e5ff;
+  border-bottom: 4px solid #00e5ff;
+  transform: translate(2rem, 2rem);
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+
+.imageContainer:hover .imageBorder {
+  opacity: 0.8;
+}
+
+.imageGlow {
+  position: absolute;
+  inset: -0.25rem;
+  background: linear-gradient(to right, rgba(0, 229, 255, 0.3) 0%, transparent 100%);
+  filter: blur(0.5rem);
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  border: 1px solid rgba(0, 229, 255, 0.4);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.2);
+}
+
+.imageAspect {
+  aspect-ratio: 5/6;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: overlay;
+  z-index: 10;
+}
+
+.imageGradientTop {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.6), transparent);
+  z-index: 10;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.7;
+}
+
+.imageName {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: #00e5ff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-right: 2rem;
+  opacity: 0.9;
+  letter-spacing: 0.2em;
+  z-index: 20;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .imageName {
+    font-size: 4.5rem;
+  }
+}
+
+.imageGradientBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 33.333333%;
+  background: linear-gradient(to top, black, transparent);
+  z-index: 10;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+.scrollBox {
+  width: 2.5rem;
+  height: 4rem;
+  border: 2px solid rgba(0, 229, 255, 0.5);
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.75rem;
+}
+
+.scrollDot {
+  width: 0.5rem;
+  height: 0.75rem;
+  background-color: #00e5ff;
+  border-radius: 9999px;
+  animation: pulseSlow 2s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-20px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+}
+
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+} 
