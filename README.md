@@ -5,6 +5,9 @@
 ### Project Overview
 Networked Narratives underwent a complete marketing site transformation, evolving from a static website into a modern, dynamic platform that effectively showcases our content creation services. The revamp focused on creating an immersive user experience with smooth animations, responsive design, and a cohesive visual identity.
 
+### Loom
+https://github.com/user-attachments/assets/a3755f63-f538-474a-86e0-c4d0513719e0
+
 ### Design Approach
 
 #### Modern Aesthetic
@@ -68,4 +71,4 @@ The revamped site has transformed Networked Narratives' digital presence with:
 
 Our team specializes in creating compelling digital experiences that elevate your brand and engage your audience. From strategy to implementation, we deliver polished, professional results.
 
-[**Work With Us →**](https://networkednarratives.com/contact)
+[**Work With Us →**](https://app.usemotion.com/meet/varritech/chat)
